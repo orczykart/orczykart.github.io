@@ -1,0 +1,405 @@
+﻿
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript">
+
+        var licznik = 1;
+        function obraz1() {
+
+            if (licznik %2===1) {
+
+                document.getElementById("contactlist").style.opacity = '0.7';
+                document.getElementById("contactlist").style.visibility = 'visible';
+
+            }
+
+            if (licznik %2===0) {
+                document.getElementById("contactlist").style.opacity = '0';
+                document.getElementById("contactlist").style.visibility = 'hidden';
+
+            }
+            licznik++;
+        }
+
+ </script>
+    <style>
+        @font-face {
+            font-family: Raleway;
+            src: url('Raleway-Thin_0.ttf');
+        }
+
+        @font-face {
+            font-family: Ralewaybold;
+            src: url('Raleway-bold_0.ttf');
+        }
+
+        #wysuph1 {
+            font-family: Raleway;
+            z-index:2;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(255, 255, 255);
+            overflow-x: hidden;
+            width:100%;
+        }
+
+        #myVideo {
+            
+            max-width: 100%;
+            max-height: 100%;
+            z-index:0;
+        }
+
+        #wysup {
+            height: 10%;
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            left:20%;
+            color: white;
+            letter-spacing: 2px;
+            z-index:2;
+        }
+
+
+
+
+
+        #przycisk {
+            height: 10%;
+            width: 60%;
+            border-radius: 80px;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 60%;
+            left:20%;
+            margin: auto auto;
+            opacity: 0.6;
+            z-index: 1;
+        }
+
+        #logo {
+            height: 80px;
+            width: 230px;
+            background-image: url("logo2.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: fixed;           
+            top: 4%;
+            left: 4%;
+            z-index: 2;
+        }
+
+        #lowcontact {
+            overflow: hidden;
+            height: 6%;
+            width: 14%;
+            border-radius: 35px 35px;
+            background: black;
+            position: absolute;
+            top: 4%;
+            right:4%;
+            opacity: 0.7;
+            z-index: 2;
+        }
+
+            #lowcontact:hover {
+                opacity: 1;
+            }
+
+
+        #contact {
+            height: 95%;
+            width: 80%;
+            background-image: url("contact2.png");
+            background-repeat: no-repeat;
+            background-size: 80% 80%;
+            position: absolute;
+            right: 2%;
+            top: 12%;
+            margin: auto;
+            z-index: 2;
+        }
+
+        #contactlist {
+            width: 70%;
+            height: 25%;
+            background-color: rgba(0, 0, 0, 0.70);
+            position: relative;
+            top: 15%;
+            margin: 0 auto;
+            border-radius: 30px 30px;
+            transition: 1s;
+            visibility:hidden;
+            opacity: 0;
+            z-index: 3;
+        }
+
+        #link1 {
+            height: 100px;
+            width: 100px;
+            background-image: url("face.png");
+            background-size: 100% 100%;
+            float: left;           
+            margin-right: 5%;
+        }
+   
+
+        #link2 {
+            height: 100px;
+            width: 100px;
+            background-image: url("art.png");
+         background-size: 100% 100%;
+            float: left;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+      
+
+        #link3 {
+            height: 100px;
+            width: 100px;
+            background-image: url("insta.png");
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 5%;
+            margin-right: 5%;
+            
+        }
+     
+
+        #link4 {
+            height: 100px;
+            width: 100px;
+            background-image: url("deviant.png");
+            background-size: 100% 100%;
+            float: left;
+            margin-left: 5%;
+            
+        }
+    
+        #odnosniki{
+            width:600px;
+            height:60%;
+            position:relative;
+            top:28%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        #opa {
+            width: 100%;
+            height:134%;
+            position:absolute;
+            top:0;
+            background-color: rgba(9, 6, 39, 0.40);
+            z-index: 1;
+        }
+        #tekst {
+            color: white;
+            position: relative;
+            top: 20%;
+            font-family: Raleway;
+        }
+
+        #pic {
+            width: 100%;
+            height: 1540px;
+            position: absolute;
+            
+        }
+        #click {
+            height: 7%;
+            width: 100%;           
+            font-family: Raleway;
+            color: white;           
+            position:absolute;
+            bottom:0%;
+            opacity:0.5;
+            background-color:black;
+
+
+        }
+        #tekst2{
+            position:relative;
+            top:10%;
+        }
+        #dragon {
+            width: 25%;
+            height: 480px;
+            background-image: url("dragon.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            display: inline-block;
+        }
+
+
+        #portret {
+            width: 25%;
+            height: 480px;
+            background-image: url("portret.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0%;
+            left: 25%;
+            display: inline-block;
+        }
+
+        #poludnica {
+            width: 25%;
+            height: 480px;
+            background-image: url("poludnitsa.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            display: inline-block;
+            top: 0%;
+            right: 25%;
+        }
+
+
+        #studium {
+            width: 25%;
+            height: 480px;
+            background-image: url("studium.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            display: inline-block;
+        }
+        #ilustracjatlo {
+            width: 100%;
+            height: 70%;
+            background-image: url("tlo.jpg");
+            background-repeat: no-repeat;
+            position: absolute;
+            top:480px;
+            left:0%;
+            
+            
+            
+        }
+      
+        
+</style>
+</head>
+<body>
+    
+
+
+    <video autoplay muted loop " id="myVideo">
+        <source src="bear.mp4" type="video/mp4">
+
+    </video>
+            
+
+    <div id="opa">
+        <div id="logo"></div>
+        <div id="lowcontact" onclick="obraz1()">
+            <div id="contact"></div>
+        </div>
+        <div id="contactlist" class="list">
+            <div id="tekst"><center><h1>email me any time on: &emsp; &ensp; &emsp; &ensp;&emsp; &ensp;&emsp; &ensp; kf.orczyk@gmail.com</h1></center> </div>
+            <div id="odnosniki">
+
+                <div id="link10">
+                    <a href="https://www.facebook.com/krzysztof.orczyk.art/?ref=bookmarks">
+                        <span id="link1" width="100px" height="100px"</span>
+                    </a>
+                </div>
+
+                <div id="link20">
+                    <a href="https://www.artstation.com/crisartairre">
+                        <span id="link2" width="100px" height="100px"</span>
+                    </a>
+                </div>
+
+                <div id="link30">
+                    <a href="https://www.instagram.com/art_of_krzyszt_of_orczyk/?hl=pl">
+                        <span id="link3" width="100px" height="100px"</span>
+                    </a>
+                </div>
+
+                <div id="link40">
+                    <a href="https://crisartairre.deviantart.com/">
+                        <span id="link4" width="100px" height="100px"</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="wysup">
+            <div id="wysuph1">
+                <center><h1>Apply for new commission of</h1></center>
+            </div>
+        </div>
+
+
+
+        <div id="przycisk">
+            <center><video width="380" autoplay loop src="animacja.mp4"></center>
+        </div>
+        <div id="click">
+            <div id="tekst2">
+                <center> <h1>Click illustration for full resolution</h1></center>
+            </div>
+        </div>
+    </div>
+  
+    <div id="pic">
+
+
+
+        <center>
+
+
+            <a href="https://cdnb.artstation.com/p/assets/images/images/009/476/431/large/krzysztof-orczyk-dragonageexp2final3.jpg?1519216403">
+                <span id="dragon"</span>
+            </a>
+
+
+
+
+            <a href="https://cdnb.artstation.com/p/assets/images/images/009/305/235/large/krzysztof-orczyk-day7.jpg?1518217638">
+                <span id="portret" </span>
+            </a>
+
+
+
+
+            <a href="https://cdna.artstation.com/p/assets/images/images/009/304/920/large/krzysztof-orczyk-poludnica-orczyk.jpg?1518216268">
+                <span id="poludnica"</span>
+            </a>
+
+
+
+
+            <a href="https://cdna.artstation.com/p/assets/images/images/009/305/058/large/krzysztof-orczyk-day9.jpg?1518217036">
+                <span id="studium"</span>
+            </a>
+
+        </center>
+
+        <center>
+            <a href="https://cdna.artstation.com/p/assets/images/images/009/304/870/large/krzysztof-orczyk-meluzyna-recovered2.jpg?1518215936">
+                <span id="ilustracjatlo"</span>
+            </a>
+        </center>
+
+
+    </div>
+
+</body>
+
+</html>
