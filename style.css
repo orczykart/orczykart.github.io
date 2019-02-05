@@ -1,0 +1,551 @@
+ <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: Raleway;
+            src: url('Raleway-Thin_0.ttf');
+        }
+
+        @font-face {
+            font-family: Ralewaybold;
+            src: url('Raleway-bold_0.ttf');
+        }
+
+
+        body {
+            margin: 0;
+            background-color: #000342;
+            font-family: Raleway;
+            font-size: 0.6rem;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .v-header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 375px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .header-content {
+            z-index: 2;
+        }
+
+        .fullscreen-video-wrap {
+            width: auto;
+            height: 100%;
+            overflow: hidden;
+        }
+
+            .fullscreen-video-wrap video {
+                min-width: auto;
+                min-height: 100%;
+                max-width: auto;
+                max-height: 100%;
+                opacity: 0.8;
+            }
+
+
+        #logo {
+            height: 80px;
+            width: 230px;
+            background-image: url("logo.png");
+            background-size: 100% 100%;
+            position: absolute;
+            top: 13%;
+            left: 20%;
+        }
+
+        #lowcontact {
+            margin: auto;
+            width: 70%;
+            height: 50px;
+            background: black;
+            border-radius: 30px 30px;
+            opacity: 0.7;
+            overflow: hidden;
+            position: absolute;
+            top: 30px;
+            right:50px;
+        }
+
+            #lowcontact:hover {
+                opacity: 1;
+            }
+
+
+        #contact {
+            font-size: 1rem;
+        }
+        #contactlist {
+            position: absolute;         
+            top: 175px;   
+            left:60px;
+            width: 70%;
+            height: 350px;
+            background-color: black;
+            border-radius: 30px 30px;
+            transition: 1s;
+            visibility: hidden;
+            opacity: 0;
+        }
+      
+        #przycisk {
+            height: 60px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            position: absolute;
+            top: 547px;
+            margin: auto auto;
+            opacity: 0.6;
+            z-index: 1;
+        }
+        #odnosniki {
+            width: 220px;
+            height: 220px;
+            margin: auto;
+        }
+
+
+        #link1 {
+            float: left;
+            height: 90px;
+            width: 90px;
+            background-image: url("face.png");
+            background-size: 100% 100%;
+            margin: 10px;
+        }
+
+
+        #link2 {
+            float: left;
+            height: 90px;
+            width: 90px;
+            background-image: url("art.png");
+            background-size: 100% 100%;
+            margin: 10px;
+        }
+
+
+        #link3 {
+            float: left;
+            height: 90px;
+            width: 90px;
+            background-image: url("insta.png");
+            background-size: 100% 100%;
+            margin: 10px;
+        }
+
+
+        #link4 {
+            float: left;
+            height: 90px;
+            width: 90px;
+            background-size: 100% 100%;
+            margin: 10px;
+            background-image: url("deviant.png");
+        }
+
+        #click {
+            position: absolute;
+            left: 0;
+            top: 607px;
+            height: 60px;
+            width: 375px;
+            font-family: Raleway;
+            font-size: 1rem;
+            color: white;
+            opacity: 0.7;
+            background-color: black;
+        }
+
+        #dragon {
+            float: left;
+            width: 375px;
+            height: 375px;
+            background-size: 100% 100%;
+            background-image: url("dragon.png");
+        }
+
+
+        #portret {
+            background-image: url("portret.png");
+            float: left;
+            width: 375px;
+            height: 375px;
+            background-size: 100% 100%;
+        }
+
+        #poludnica {
+            background-image: url("poludnitsa.png");
+            float: left;
+            width: 375px;
+            height: 375px;
+            background-size: 100% 100%;
+        }
+
+
+        #studium {
+            background-image: url("studium.png");
+            float: left;
+            width: 375px;
+            height: 375px;
+            background-size: 100% 100%;
+        }
+
+        #ilustracjatlo {
+            background-image: url("tlo.jpg");
+            float: left;
+            width: 375px;
+            height: 211px;
+            background-size: 100% 100%;
+        }
+
+     
+
+
+/**********************************************************************************************************************************************************************************/
+
+@media only screen and (min-width: 768px) {
+
+    .v-header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 768px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .header-content {
+        z-index: 2;
+    }
+
+    .fullscreen-video-wrap {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .fullscreen-video-wrap video {
+            min-width: auto;
+            min-height: 100%;
+            max-width: auto;
+            max-height: 100%;
+            opacity: 0.8;
+        }
+
+
+    #logo {
+        height: 80px;
+        width: 230px;
+        background-image: url("logo.png");
+        background-size: 100% 100%;
+        position: fixed;
+        top: 13%;
+        left:0px;
+    }
+
+    #lowcontact {
+        margin: auto;
+        width: 70%;
+        height: 50px;
+        background: black;
+        border-radius: 30px 30px;
+        opacity: 0.7;
+        overflow: hidden;
+        position: absolute;
+        top: 60px;
+        right: 100px;
+    }
+
+    #contactlist {
+        position: absolute;
+        top: 350px;
+        left: 150px;
+        width: 70%;
+        height: 350px;
+        background-color: black;
+        border-radius: 30px 30px;
+        transition: 1s;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #przycisk {
+        height: 60px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 903px;
+        margin: auto auto;
+        opacity: 0.6;
+        z-index: 1;
+    }
+    #click {
+        position: absolute;
+        left: 0px;
+        top: 963px;
+        height: 60px;
+        width: 768px;
+        font-family: Raleway;
+        font-size: 1rem;
+        color: white;
+        opacity: 0.7;
+        background-color: black;
+    }
+    #dragon {
+        float: left;
+        width: 384px;
+        height: 384px;
+        background-size: 100% 100%;
+        background-image: url("dragon.png");
+    }
+
+
+    #portret {
+        background-image: url("portret.png");
+        float: left;
+        width: 384px;
+        height: 384px;
+        background-size: 100% 100%;
+    }
+
+    #poludnica {
+        background-image: url("poludnitsa.png");
+        float: left;
+        width: 384px;
+        height: 384px;
+        background-size: 100% 100%;
+    }
+
+
+    #studium {
+        background-image: url("studium.png");
+        float: left;
+        width: 384px;
+        height: 384px;
+        background-size: 100% 100%;
+    }
+
+    #ilustracjatlo {
+        background-image: url("tlo.jpg");
+        float: left;
+        width: 768px;
+        height: 384px;
+        background-size: 100% 100%;
+    }
+
+}
+/**********************************************************************************************************************************************************************************/
+@media only screen and (min-width: 1920px) {
+    .v-header {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        color: #fff;
+    }
+
+    .container {
+        max-width: 1920px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .header-content {
+        z-index: 2;
+    }
+
+    .fullscreen-video-wrap {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+    }
+
+        .fullscreen-video-wrap video {
+            min-width: 100%;
+            min-height: 1290px;
+            max-width: 100%;
+            max-height: 1290px;
+            opacity: 0.8;
+        }
+
+
+    #logo {
+        height: 80px;
+        width: 230px;
+        background-image: url("logo.png");
+        background-size: 100% 100%;
+        position: fixed;
+        top: 5%;
+        left: 0px;
+    }
+
+    #lowcontact {
+        margin: auto;
+        width: 20%;
+        height: 70px;
+        background: black;
+        border-radius: 30px 30px;
+        opacity: 0.7;
+        overflow: hidden;
+        position: absolute;
+        top: 60px;
+        right: 150px;
+    }
+    #contact {
+        font-size: 1.3rem;
+       align-items: center;
+       
+    }
+
+    #contactlist {
+        position: absolute;
+        top: 350px;
+        left: 310px;
+        width: 70%;
+        height: 240px;
+        background-color: black;
+        border-radius: 30px 30px;
+        transition: 1s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    #tekst
+    {
+        position:absolute;
+        top:8%;
+        left:36%;
+    }
+    #odnosniki {
+        width: 5000px;
+        height: 180px;
+        margin: auto;
+        position:absolute;
+        left:34%;
+        top:33%;
+    }
+
+
+    #link1 {
+        float: left;
+        height: 90px;
+        width: 90px;
+        background-image: url("face.png");
+        background-size: 100% 100%;
+        margin: 10px;
+    }
+
+
+    #link2 {
+        float: left;
+        height: 90px;
+        width: 90px;
+        background-image: url("art.png");
+        background-size: 100% 100%;
+        margin: 10px;
+    }
+
+
+    #link3 {
+        float: left;
+        height: 90px;
+        width: 90px;
+        background-image: url("insta.png");
+        background-size: 100% 100%;
+        margin: 10px;
+    }
+
+
+    #link4 {
+        float: left;
+        height: 90px;
+        width: 90px;
+        background-size: 100% 100%;
+        margin: 10px;
+        background-image: url("deviant.png");
+    }
+
+    #przycisk {
+        height: 60px;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        top: 817px;
+        margin: auto auto;
+        opacity: 0.6;
+        z-index: 1;
+    }
+
+    #click {
+        position: absolute;
+        left: 0px;
+        top: 877px;
+        height: 60px;
+        width: 1920px;
+        font-family: Raleway;
+        font-size: 1rem;
+        color: white;
+        opacity: 0.7;
+        background-color: black;
+    }
+
+    #dragon {
+        float: left;
+        width: 475px;
+        height: 480px;
+        background-size: 100% 100%;
+        background-image: url("dragon.png");
+    }
+
+
+    #portret {
+        background-image: url("portret.png");
+        float: left;
+        width: 476px;
+        height: 480px;
+        background-size: 100% 100%;
+    }
+
+    #poludnica {
+        background-image: url("poludnitsa.png");
+        float: left;
+        width: 476px;
+        height: 480px;
+        background-size: 100% 100%;
+    }
+
+
+    #studium {
+        background-image: url("studium.png");
+        float: left;
+        width: 476px;
+        height: 480px;
+        background-size: 100% 100%;
+    }
+
+    #ilustracjatlo {
+        background-image: url("tlo.jpg");
+        float: left;
+        width: 1920px;
+        height: 1080px;
+        background-size: 100% 100%;
+    }
+}
+    </style>
